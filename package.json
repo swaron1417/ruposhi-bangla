@@ -1,0 +1,44 @@
+{
+  "name": "ruposhibangla",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint src tests backend scripts test --ignore-pattern '**/artifacts/**' --ignore-pattern '**/node_modules/**'",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "hardhat:compile": "hardhat compile",
+    "hardhat:test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy-sepolia.ts --network sepolia",
+    "deploy:local": "hardhat run scripts/deploy-sepolia.ts --network hardhat"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^4.2.2",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "chai": "^6.3.0",
+    "dotenv": "^18.0.10",
+    "hardhat": "^3.22.0",
+    "jsdom": "^31.0.1",
+    "mocha": "^12.0.3",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "chainId": 11155111,
+  "network": "sepolia",
+  "padmaToken": "0x0Ed59AA55cbEe2f20c19F8968903fD3fFcE02fbA",
+  "ruposhiKeepsakes": "0x0d12df3C35f763D353F269fa24edf4c4F55d4d51",
+  "deployer": "0xD4321E6e4116214398E1148a9261c14b4dBAC52e"
+}
